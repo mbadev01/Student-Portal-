@@ -56,7 +56,8 @@ const Student_Reg = () => {
           active={active}
           content={content}
           onBack={() => setActive((p) => p - 1)}
-          onFinish={() => Alert.alert("Finish")}
+          // onFinish={() => Alert.alert("Finish")}
+          onFinish={() => navigation.navigate("Student Dashboard")}
           onNext={() => setActive((p) => p + 1)}
         />
       </ScrollView>

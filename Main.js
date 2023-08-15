@@ -15,6 +15,9 @@ import Register_Semester from "./Screens/Register_Semester";
 import Register_Subject from "./Screens/Register_Subject";
 import Register_Teacher from "./Screens/Register_Teacher";
 import Search_Student from "./Screens/Search_Student";
+import Student_Dashboard from "./Screens/Student_Dashboard";
+import Qr_Scanner from "./Screens/Qr_Scanner";
+import Scanner from "./Screens/Scanner";
 const Main = () => {
   const Stack = createNativeStackNavigator();
   return (
@@ -33,6 +36,9 @@ const Main = () => {
         <Stack.Screen name="Register Subject" component={Register_Subject} />
         <Stack.Screen name="Register Teacher" component={Register_Teacher} />
         <Stack.Screen name="Search Student" component={Search_Student} />
+        <Stack.Screen name="Student Dashboard" component={Student_Dashboard} />
+        <Stack.Screen name="Qr Scanner" component={Qr_Scanner} />
+        <Stack.Screen name="Scanner" component={Scanner} />
       </Stack.Navigator>
     </NavigationContainer>
   );

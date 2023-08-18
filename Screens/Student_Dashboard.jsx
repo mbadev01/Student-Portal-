@@ -107,7 +107,10 @@ const Student_Dashboard = () => {
               alignSelf: "center",
             }}
           >
-            <TouchableOpacity style={{ alignItems: "center" }}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate("Student Attendance Sheet")}
+              style={{ alignItems: "center" }}
+            >
               <FontAwesome name="file-text" size={50} color="#780000" />
               <Text>Attendance</Text>
             </TouchableOpacity>

@@ -18,6 +18,7 @@ import Search_Student from "./Screens/Search_Student";
 import Student_Dashboard from "./Screens/Student_Dashboard";
 import Qr_Scanner from "./Screens/Qr_Scanner";
 import Scanner from "./Screens/Scanner";
+import Student_Attendance_Sheet from "./Screens/Student_Attendance_Sheet";
 const Main = () => {
   const Stack = createNativeStackNavigator();
   return (
@@ -39,6 +40,10 @@ const Main = () => {
         <Stack.Screen name="Student Dashboard" component={Student_Dashboard} />
         <Stack.Screen name="Qr Scanner" component={Qr_Scanner} />
         <Stack.Screen name="Scanner" component={Scanner} />
+        <Stack.Screen
+          name="Student Attendance Sheet"
+          component={Student_Attendance_Sheet}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
